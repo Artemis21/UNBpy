@@ -3,7 +3,8 @@
 ## `UNBClient(token)`
 The client to send web requests to the [UnbelievaBoat API](https://unbelievaboat.com/api/docs).  
 *Parameters*
- - `token`: Your application token, available [here](https://unbelievaboat.com/applications).
+ - `token`: Your application token, available [here](https://unbelievaboat.com/applications). 
+ 
 *Methods*  
  - `get_all_users`
     - Input: a [discord.py](https://github.com/Rapptz/discord.py) [`Guild`](https://discordpy.readthedocs.io/en/latest/api.html#guild).
@@ -14,10 +15,12 @@ The client to send web requests to the [UnbelievaBoat API](https://unbelievaboat
     - Ouput: a [`UNBUser`](#unbuser).
     - Raises: `APIError`.
 ## `UNBUser`
-A class representing the data given by the API on a user. Should not be created externally.
+A class representing the data given by the API on a user. Should not be created externally.  
+
 *Methods*  
  - `reload`
-    - Reload the bank, cash and rank properties to make them correct.
+    - Reload the bank, cash and rank properties to make them correct.  
+    
 *Properties*  
  - `cash`: What a user has in cash. Changes will be sent to the API (and may raise an `APIError`).
  - `bank`: What a user has in their bank. Changes will be sent to the API (and may raise an `APIError`).
